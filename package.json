@@ -15,7 +15,9 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@nuxtjs/tailwindcss": "^6.11.3",
+    "@pinia/nuxt": "^0.5.1",
     "daisyui": "^4.6.2",
     "nuxt3-leaflet": "^1.0.12"
   }
