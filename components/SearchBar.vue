@@ -7,7 +7,7 @@ const search = ref<string>('')
 
 <template>
   <form class="flex items-center p-4">
-    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs mr-4" v-model="search"/>
+    <input type="text" placeholder="Search by title" class="input input-bordered w-full max-w-xs mr-4" v-model="search"/>
     <button class="btn btn-circle btn-outline" @click.prevent="activities.filterByTitle(search)">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="w-6 h-6">
