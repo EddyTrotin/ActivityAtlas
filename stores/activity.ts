@@ -41,7 +41,7 @@ function getRandomFloat(min: number, max: number) {
 }
 
 function seedActivities() {
-  const max = 4
+  const max = 20
   const activities: IActivity[] = []
   for (let i = 0; i < max; i++) {
     activities.push({
@@ -57,6 +57,8 @@ function seedActivities() {
   return activities
 }
 
+const fakeActivities = seedActivities()
+
 function getRandomCategories() {
   // const max = Math.random() * 6
   return [categories[Math.random() * categories.length + 1]]
@@ -64,13 +66,13 @@ function getRandomCategories() {
 
 export const useActivityStore = defineStore('activityStore', {
   state: (): IActivityState => ({
-    list: seedActivities(),
+    list: fakeActivities,
     current: ''
   }),
   actions: {
-    // async fetch() {
-    //   const allAct = await $fetch('host/api/activities')
-    //   this.list = allAct
-    // }
+    filterByTitle(title: string) {
+      this.$reset()
+      if (title !== '') this.list = this.list.filter(activity => activity.title.toLowerCase().includes(title.toLowerCase()))
+    }
   }
 })

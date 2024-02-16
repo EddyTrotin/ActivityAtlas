@@ -2,14 +2,14 @@
 import '~/assets/css/main.css'
 </script>
 <template>
-  <div class="col-span-2 flex justify-center">
+  <div class="h-[10vh] col-span-2 flex justify-center overflow-hidden">
     <SearchBar />
   </div>
-  <div class="flex">
-    <div class="w-1/3">
+  <div class="h-[90vh] flex">
+    <div class="w-1/2">
       <ActivityList />
     </div>
-    <div class="w-2/3">
+    <div class="w-1/2">
       <ActivityMap />
     </div>
   </div>
