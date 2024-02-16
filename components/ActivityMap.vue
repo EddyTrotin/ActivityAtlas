@@ -18,6 +18,9 @@ const activities = useActivityStore()
         v-for="activity in activities.list"
         :lat-lng="activity.coords"
         @mouseover="activities.current = activity.id"
+        :options="{
+          riseOnHover: true,
+        }"
       >
         <LIcon
           :icon-url="activities.current === activity.id ? '/red_pin.png' : 'blue_pin.png'"

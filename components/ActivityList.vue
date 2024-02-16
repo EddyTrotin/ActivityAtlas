@@ -6,7 +6,7 @@ const activities = useActivityStore()
 
 <template>
   <div class="h-full px-6 pb-10">
-    <div class="h-full overflow-y-scroll flex flex-wrap justify-center ">
+    <div class="h-full overflow-y-scroll flex flex-wrap justify-center">
       <div
         v-for="activity in activities.list"
         @mouseover="activities.current = activity.id"
