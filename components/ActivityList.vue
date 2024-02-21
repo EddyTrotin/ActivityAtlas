@@ -16,7 +16,7 @@ const activities = useActivityStore()
         <h2 class="card-title">{{ activity.title }}</h2>
         <p>{{ activity.desc }}</p>
         <div class="card-actions justify-end">
-          <button class="btn btn-primary">Buy Now</button>
+          <button class="btn btn-primary">Check out</button>
         </div>
       </div>
     </div>

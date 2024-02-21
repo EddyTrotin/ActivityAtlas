@@ -1,0 +1,17 @@
+export const categories = [
+    'Animaux',
+    'Arts & Culture',
+    'Artisanat & Cuisine',
+    'Bien être',
+    'Ecologie & Environnement',
+    'Education',
+    'Loisirs',
+    'Musique',
+    'Patrimoine',
+    'Réseaux pros & étudiants',
+    'Santé',
+    'Sciences & Technologie',
+    'Solidarité & Action sociale',
+    'Spiritualité',
+    'Sport',
+  ]
