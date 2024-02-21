@@ -37,3 +37,21 @@ yarn dev
 # bun
 bun run dev
 ```
+
+## Tests
+
+Run unit tests:
+
+```bash
+# npm
+npm run test
+
+# pnpm
+pnpm run test
+
+# yarn
+yarn test
+
+# bun
+bun run test
+```
